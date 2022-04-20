@@ -153,6 +153,30 @@ config.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/config.cpp.s
 .PHONY : config.cpp.s
 
+log/log.o: log/log.cpp.o
+.PHONY : log/log.o
+
+# target to build an object file
+log/log.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/log/log.cpp.o
+.PHONY : log/log.cpp.o
+
+log/log.i: log/log.cpp.i
+.PHONY : log/log.i
+
+# target to preprocess a source file
+log/log.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/log/log.cpp.i
+.PHONY : log/log.cpp.i
+
+log/log.s: log/log.cpp.s
+.PHONY : log/log.s
+
+# target to generate assembly for a file
+log/log.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/log/log.cpp.s
+.PHONY : log/log.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -201,6 +225,30 @@ server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/server.cpp.s
 .PHONY : server.cpp.s
 
+timer/lst_timer.o: timer/lst_timer.cpp.o
+.PHONY : timer/lst_timer.o
+
+# target to build an object file
+timer/lst_timer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o
+.PHONY : timer/lst_timer.cpp.o
+
+timer/lst_timer.i: timer/lst_timer.cpp.i
+.PHONY : timer/lst_timer.i
+
+# target to preprocess a source file
+timer/lst_timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.i
+.PHONY : timer/lst_timer.cpp.i
+
+timer/lst_timer.s: timer/lst_timer.cpp.s
+.PHONY : timer/lst_timer.s
+
+# target to generate assembly for a file
+timer/lst_timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.s
+.PHONY : timer/lst_timer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,12 +261,18 @@ help:
 	@echo "... config.o"
 	@echo "... config.i"
 	@echo "... config.s"
+	@echo "... log/log.o"
+	@echo "... log/log.i"
+	@echo "... log/log.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"
+	@echo "... timer/lst_timer.o"
+	@echo "... timer/lst_timer.i"
+	@echo "... timer/lst_timer.s"
 .PHONY : help
 
 

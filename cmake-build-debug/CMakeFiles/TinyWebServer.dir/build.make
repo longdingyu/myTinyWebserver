@@ -105,11 +105,39 @@ CMakeFiles/TinyWebServer.dir/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TinyWebServer.dir/server.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/server.cpp -o CMakeFiles/TinyWebServer.dir/server.cpp.s
 
+CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o: CMakeFiles/TinyWebServer.dir/flags.make
+CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o: ../timer/lst_timer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o -c /Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/timer/lst_timer.cpp
+
+CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/timer/lst_timer.cpp > CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.i
+
+CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/timer/lst_timer.cpp -o CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.s
+
+CMakeFiles/TinyWebServer.dir/log/log.cpp.o: CMakeFiles/TinyWebServer.dir/flags.make
+CMakeFiles/TinyWebServer.dir/log/log.cpp.o: ../log/log.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TinyWebServer.dir/log/log.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinyWebServer.dir/log/log.cpp.o -c /Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/log/log.cpp
+
+CMakeFiles/TinyWebServer.dir/log/log.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TinyWebServer.dir/log/log.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/log/log.cpp > CMakeFiles/TinyWebServer.dir/log/log.cpp.i
+
+CMakeFiles/TinyWebServer.dir/log/log.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TinyWebServer.dir/log/log.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/log/log.cpp -o CMakeFiles/TinyWebServer.dir/log/log.cpp.s
+
 # Object files for target TinyWebServer
 TinyWebServer_OBJECTS = \
 "CMakeFiles/TinyWebServer.dir/main.cpp.o" \
 "CMakeFiles/TinyWebServer.dir/config.cpp.o" \
-"CMakeFiles/TinyWebServer.dir/server.cpp.o"
+"CMakeFiles/TinyWebServer.dir/server.cpp.o" \
+"CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o" \
+"CMakeFiles/TinyWebServer.dir/log/log.cpp.o"
 
 # External object files for target TinyWebServer
 TinyWebServer_EXTERNAL_OBJECTS =
@@ -117,9 +145,11 @@ TinyWebServer_EXTERNAL_OBJECTS =
 TinyWebServer: CMakeFiles/TinyWebServer.dir/main.cpp.o
 TinyWebServer: CMakeFiles/TinyWebServer.dir/config.cpp.o
 TinyWebServer: CMakeFiles/TinyWebServer.dir/server.cpp.o
+TinyWebServer: CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o
+TinyWebServer: CMakeFiles/TinyWebServer.dir/log/log.cpp.o
 TinyWebServer: CMakeFiles/TinyWebServer.dir/build.make
 TinyWebServer: CMakeFiles/TinyWebServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TinyWebServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable TinyWebServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TinyWebServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

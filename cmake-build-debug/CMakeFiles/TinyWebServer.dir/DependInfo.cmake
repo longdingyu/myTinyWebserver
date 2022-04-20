@@ -9,8 +9,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/config.cpp" "/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/cmake-build-debug/CMakeFiles/TinyWebServer.dir/config.cpp.o"
+  "/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/log/log.cpp" "/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/cmake-build-debug/CMakeFiles/TinyWebServer.dir/log/log.cpp.o"
   "/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/main.cpp" "/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/cmake-build-debug/CMakeFiles/TinyWebServer.dir/main.cpp.o"
   "/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/server.cpp" "/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/cmake-build-debug/CMakeFiles/TinyWebServer.dir/server.cpp.o"
+  "/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/timer/lst_timer.cpp" "/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/cmake-build-debug/CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

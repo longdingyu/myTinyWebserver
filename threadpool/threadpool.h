@@ -41,7 +41,7 @@ private:
 template <typename T>
 threadpool<T>::threadpool(int actor_model, sql_connection_pool *connPool, int thread_number, int max_request)
 {
-    #if 0
+    #if 1
     cout << "-- threadpool is ok --" << endl;
     if (thread_number <= 0 || max_request <= 0)
     {
@@ -78,6 +78,61 @@ template <typename T>
 void threadpool<T>::run()
 {
     cout << "-- threadpool is run -- " << endl;
+    while(true){
+        m_queuestat.wait();
+        m_queuelocker.lock();
+        if(m_workqueue.empty()){
+            m_queuelocker.unlock();
+            continue;
+        }
+        T *request = m_workqueue.front();
+        m_workqueue.pop_front();
+        m_queuelocker.unlock();
+        if(!request) continue;
+        if(1 == m_actor_model){
+            if(0 == request->m_state)   //此处m_state
+            {
+                if(request->read_once()){
+                    //此处重写
+                }
+            }
+        }
+    }
+}
+
+template<typename T>
+threadpool<T>::~threadpool() {
+    delete[] m_threads;
+}
+
+template<typename T>
+bool threadpool<T>::append(T *request, int state) {
+    m_queuelocker.lock();
+    if(m_workqueue.size() >= m_max_requests)
+    {
+        m_queuelocker.unlock();
+        return false;
+    }
+    request->m_state = state;
+    m_workqueue.push_back(request);
+    m_queuelocker.unlock();
+    m_queuestat.post();
+    return true;
+}
+
+template<typename T>
+bool threadpool<T>::append_p(T *request) {
+    m_queuelocker.lock();
+    if(m_workqueue.size() >= m_max_requests)
+    {
+        m_queuelocker.unlock();
+        return false;
+    }
+    m_workqueue.push_back(request);
+    m_queuelocker.unlock();
+    m_queuestat.post();
+
+    return true;
 }
 
 

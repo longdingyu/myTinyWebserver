@@ -89,6 +89,12 @@
 		<Unit filename="/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/http/http_conn.h">
 			<Option target="TinyWebServer"/>
 		</Unit>
+		<Unit filename="/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/log/log.cpp">
+			<Option target="TinyWebServer"/>
+		</Unit>
+		<Unit filename="/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/log/log.h">
+			<Option target="TinyWebServer"/>
+		</Unit>
 		<Unit filename="/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/main.cpp">
 			<Option target="TinyWebServer"/>
 		</Unit>
@@ -96,6 +102,12 @@
 			<Option target="TinyWebServer"/>
 		</Unit>
 		<Unit filename="/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/server.h">
+			<Option target="TinyWebServer"/>
+		</Unit>
+		<Unit filename="/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/timer/lst_timer.cpp">
+			<Option target="TinyWebServer"/>
+		</Unit>
+		<Unit filename="/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/timer/lst_timer.h">
 			<Option target="TinyWebServer"/>
 		</Unit>
 		<Unit filename="/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/CMakeLists.txt">
