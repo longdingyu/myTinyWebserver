@@ -1,0 +1,3 @@
+/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/apple/CLionProjects/myTinyWebserver/myTinyWebserver/cmake-build-debug/CMakeFiles/TinyWebServer.dir
